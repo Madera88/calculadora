@@ -7,7 +7,7 @@ def cargar(num):
     else:
         aux = resultado.get()
         aux = str(aux)+str(num)
-        resultado.set(float(aux))
+        resultado.set(int(aux))
 
 def sumar():
     global dato1
@@ -116,7 +116,7 @@ simbolo = None
 display=Label(ventana , width=26, textvariable=resultado)
 display.config(
     fg="white",
-    bg="darkgray",
+    bg="lightblue",
     font=("Open Sans",18),
     padx=10,
     pady=10,   
@@ -167,7 +167,7 @@ botResultado.grid(padx=5, pady=5, row=6, column=1)
 botResultado=Button(ventana, text="=", command= lambda: resultadoOperacion() , width=15)
 botResultado.grid(padx=5, pady=5, row=6, column=2)
 
-
+#FILA BOTONES 6
 botResultado=Button(ventana, text="Borrar", command= lambda: limpiar() , width=15)
 botResultado.grid(padx=5, pady=5, row=7, column=1)
 
